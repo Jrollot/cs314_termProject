@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Minimal Frontend - Signup & Login</title>
+</head>
+<body>
+  <h1>Welcome</h1>
+
+  <div>
+    <h2>Signup</h2>
+    <input type="text" id="signupFirstName" placeholder="First Name">
+    <input type="text" id="signupLastName" placeholder="Last Name">
+    <input type="email" id="signupEmail" placeholder="Email">
+    <input type="password" id="signupPassword" placeholder="Password">
+    <button onclick="callSignup()">Signup</button>
+  </div>
+
+  <div>
+    <h2>Login</h2>
+    <input type="email" id="loginEmail" placeholder="Email">
+    <input type="password" id="loginPassword" placeholder="Password">
+    <button onclick="callLogin()">Login</button>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

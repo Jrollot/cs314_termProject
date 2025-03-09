@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Chatrooms</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { text-align: center; }
+    .container { max-width: 600px; margin: auto; }
+    .chatroom-list, .dm-section { border: 1px solid #ccc; padding: 10px; margin-top: 20px; }
+    .chatroom { padding: 5px; border-bottom: 1px solid #ddd; }
+    .chatroom button { margin-left: 10px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chatrooms</h1>
+    <button onclick="window.location.href='profile.html'">Edit Profile</button>
+    <button onclick="logout()">Logout</button>
+
+    <!-- Create Chatroom Section -->
+    <div class="chatroom-list">
+      <h3>Create a Chatroom</h3>
+      <input type="text" id="newChatroom" placeholder="Chatroom name">
+      <button onclick="createChatroom()">Create</button>
+    </div>
+
+    <!-- Available Chatrooms Section -->
+    <div class="chatroom-list">
+      <h3>Available Chatrooms</h3>
+      <div id="chatroomList">Loading chatrooms...</div>
+    </div>
+
+    <!-- Direct Message Section -->
+    <div class="dm-section">
+      <h3>Start a Direct Message</h3>
+      <input type="text" id="searchUserInput" placeholder="Enter name or email">
+      <button onclick="searchUsers()">Search</button>
+    <div id="userSearchResults"></div>
+  </div>
+
+  <script type="module" src="./chatrooms.js"></script>
+</body>
+</html>

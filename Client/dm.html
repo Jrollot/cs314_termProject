@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Direct Message</title>
+</head>
+<body>
+  <h1>Direct Messaging</h1>
+  <h3 id="dmReceiver">Chat with: </h3>
+
+  <div id="dmChatBox" style="border: 1px solid #ccc; width: 600px; height: 300px; overflow: auto;"></div>
+
+  <input type="text" id="dmMessageInput" placeholder="Type your message...">
+  <button onclick="sendDirectMessage()">Send</button>
+
+  <button onclick="window.location.href='chatrooms.html'">Back to Chatrooms</button>
+
+  <script type="module" src="./dm.js"></script>
+</body>
+</html>
